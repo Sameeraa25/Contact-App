@@ -7,7 +7,7 @@ function Button({ text, onClick, width, variant }: any) {
       {variant === "edit" ? (
         <button
           onClick={onClick}
-          className="border-yellow-500 p-2 border text-base text-yellow-500 uppercase w-full rounded hover:shadow-md"
+          className="border-green-500 p-2 border text-base text-green-500 uppercase w-full rounded hover:shadow-md"
         >
           {text}
         </button>
