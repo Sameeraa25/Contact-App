@@ -5,10 +5,10 @@ This React-based web application combines comprehensive contact management featu
 ## Features
 
 Contact Management:</p>
-<div>-**Add Contacts:** Fill out a form to add new contacts.</div>
--**View Contacts:** See a list of all contacts.
--**Contact Details:** View detailed information for each contact.
--**Edit/Delete Contacts:** Modify or remove existing contacts.
+<div>-Add Contacts: Fill out a form to add new contacts.</div>
+<div>-View Contacts:See a list of all contacts.</div>
+<div>-Contact Details:View detailed information for each contact.</div>
+<div>-Edit/Delete Contacts: Modify or remove existing contacts.</div>
 
 ## Maps:
 Dashboard: interactive charts and maps.
@@ -53,9 +53,9 @@ Once the development server is running, open your browser and go to http://local
 
 ## API 
 The app retrieves COVID-19 data from these APIs:
--**Worldwide Data:** https://disease.sh/v3/covid-19/all
--**Country Specific Data:** https://disease.sh/v3/covid-19/countries
-**Historical Data:** https://disease.sh/v3/covid-19/historical/all?lastdays=all
+<div>-Worldwide Data: https://disease.sh/v3/covid-19/all </div>
+<div>-Country Specific Data:** https://disease.sh/v3/covid-19/countries</div>
+-<div>Historical Data: https://disease.sh/v3/covid-19/historical/all?lastdays=all</div>
 These endpoints provide up-to-date information on COVID-19 cases, recoveries, and deaths globally and by country.
 
 
