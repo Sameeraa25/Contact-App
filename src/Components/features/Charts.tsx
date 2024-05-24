@@ -82,7 +82,7 @@ const Charts = () => {
         {!content ? (
           // Render Line Graph option when content is false
           <div className="flex items-center gap-5">
-            <p className="p-4 text-base text-indigo-500 uppercase cursor-pointer font-medium">
+            <p className="p-4 text-base text-blue-500 uppercase cursor-pointer font-medium">
               Line Graph
             </p>
             <p
@@ -101,7 +101,7 @@ const Charts = () => {
             >
               Line Graph
             </p>
-            <p className="p-4 text-base text-indigo-500 uppercase cursor-pointer font-medium">
+            <p className="p-4 text-base text-blue-500 uppercase cursor-pointer font-medium">
               Leaflet Map
             </p>
           </div>

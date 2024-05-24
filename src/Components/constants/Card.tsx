@@ -4,13 +4,22 @@ import Button from "./Button";
 import { useDispatch } from "react-redux";
 import { removeContact } from "../../store";
 
-const Card = ({ details }: any) => {
+interface CardProps {
+  details: {
+    id: number;
+    firstName: string;
+    lastName: string;
+    status: string;
+  };
+}
+
+const Card: React.FC<CardProps>= ({ details }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="lg:w-[300px] w-[250px] border border-grayLight p-5 rounded shadow-md ">
+    <div className="lg:w-[300px] w-[250px] border border-navy-Light p-5 rounded shadow-md ">
       {/* Display contact's name */}
-      <p className="text-lg font-semibold text-primary">
+      <p className="text-lg font-semibold text-white">
         {details.firstName} {details.lastName}
       </p>
 
@@ -22,7 +31,7 @@ const Card = ({ details }: any) => {
       )}
       <div className="flex items-center justify-between gap-5 mt-5">
         <Link to="/contacts/edit" state={details} className="w-full">
-          <Button text="Edit" variant="edit" />
+          <Button text="Edit" variant="edit" className="w-full" />
         </Link>
 
         <Button
@@ -31,6 +40,7 @@ const Card = ({ details }: any) => {
           }}
           text="Delete"
           variant="delete"
+          className="w-full"
         />
       </div>
     </div>

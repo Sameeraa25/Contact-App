@@ -589,7 +589,7 @@ class ApexChart extends React.Component<
           name: "deaths",
           data: props.deaths,
           fill: {
-            colors: ["rgba(241, 77, 77, 0.5)"],
+            colors: ["red"],
           },
           // data: [
           //   [1327359600000, 30.95],

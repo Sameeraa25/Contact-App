@@ -23,8 +23,8 @@ const StyledFormControlLabel = styled((props: StyledFormControlLabelProps) => (
   <FormControlLabel {...props} />
 ))(({ checked }) => ({
   ".MuiFormControlLabel-label": checked
-    ? { color: "#323232" }
-    : { color: "#323232" },
+    ? { color: "#004080" }
+    : { color: "#001f3f" },
 }));
 
 const MyFormControlLabel = (props: FormControlLabelProps) => {
@@ -63,10 +63,10 @@ const RadioButton: React.FC<Props> = ({
                   onChange={onChange}
                   sx={{
                     "&.Mui-checked": {
-                      color: "#00c7ff",
+                      color: "#004080",
                     },
                     "&.Mui-unchecked": {
-                      color: "#323232",
+                      color: "#001f3f",
                     },
                   }}
                 />
