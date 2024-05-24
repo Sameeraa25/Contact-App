@@ -55,7 +55,7 @@ Once the development server is running, open your browser and go to http://local
 The app retrieves COVID-19 data from these APIs:
 <div>-Worldwide Data: https://disease.sh/v3/covid-19/all </div>
 <div>-Country Specific Data:** https://disease.sh/v3/covid-19/countries</div>
--<div>Historical Data: https://disease.sh/v3/covid-19/historical/all?lastdays=all</div>
+<div>Historical Data: https://disease.sh/v3/covid-19/historical/all?lastdays=all</div>
 These endpoints provide up-to-date information on COVID-19 cases, recoveries, and deaths globally and by country.
 
 
