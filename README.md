@@ -1,46 +1,46 @@
-Contact Management App with Charts and Maps
+#Contact Management App with Charts and Maps
 This React-based web application combines comprehensive contact management features with interactive charts and maps for visualizing COVID-19 data.
 
-Features
+##Features
 Contact Management:
-Add Contacts: Fill out a form to add new contacts.
-View Contacts: See a list of all contacts.
-Contact Details: View detailed information for each contact.
-Edit/Delete Contacts: Modify or remove existing contacts.
+**Add Contacts:** Fill out a form to add new contacts.
+**View Contacts:** See a list of all contacts.
+**Contact Details:** View detailed information for each contact.
+**Edit/Delete Contacts:** Modify or remove existing contacts.
 
-Maps:
+##Maps:
 Dashboard: interactive charts and maps.
 Line Graph: Displays global COVID-19 case trends.
 Interactive Map: Utilizes React Leaflet to show country-specific COVID-19 statistics with markers.
 
-Prerequisites
+##Prerequisites
 Node.js (version 16.x or higher)
 npm or yarn
 
-Installation
+##Installation
 To set up the project locally, follow these steps:
 
-Clone the repository:
+1.**Clone the repository:**
 git clone https://github.com/Sameeraa25/Contact-Management-App.git
-Navigate to the project directory:
+2.**Navigate to the project directory:**
 cd <project-directory>
-Install dependencies:
+3.**Install dependencies:**
 npm install
-# or
+or
 yarn install
-Start the development server:
+4.**Start the development server:**
 npm start
-# or
+ or
 yarn start
 
-Usage
+##Usage
 Once the development server is running, open your browser and go to http://localhost:3000. You can manage contacts and view COVID-19 data on interactive charts and maps.
 
-API 
+##API 
 The app retrieves COVID-19 data from these APIs:
-Worldwide Data: https://disease.sh/v3/covid-19/all
-Country Specific Data: https://disease.sh/v3/covid-19/countries
-Historical Data: https://disease.sh/v3/covid-19/historical/all?lastdays=all
+**Worldwide Data:** https://disease.sh/v3/covid-19/all
+**Country Specific Data:** https://disease.sh/v3/covid-19/countries
+**Historical Data:** https://disease.sh/v3/covid-19/historical/all?lastdays=all
 These endpoints provide up-to-date information on COVID-19 cases, recoveries, and deaths globally and by country.
 
 
