@@ -1,41 +1,35 @@
 import React from "react";
 import { IoMdPersonAdd } from "react-icons/io";
 
-interface ButtonProps {
-  text: string;
-  onClick: () => void;
-  width?: string;
-  variant?: "edit" | "delete" | "default";
-  className?: string;
-}
-
-const Button: React.FC<ButtonProps> = ({
-  text,
-  onClick,
-  width,
-  variant = "default",
-  className,
-}) => {
-  const baseStyles =
-    "p-2 text-base uppercase w-full rounded hover:shadow-md font-medium tracking-widest flex items-center justify-center";
-  
-  let variantStyles = "";
-  if (variant === "edit") {
-    variantStyles = "border border-green-500 text-green-500";
-  } else if (variant === "delete") {
-    variantStyles = "border border-red-400 text-red-400 hover:bg-red-100";
-  } else {
-    variantStyles = "bg-customPurple text-white p-4";
-  }
-
+const Button = ({ text, onClick, width, variant }: any) => {
   return (
-    <button
-      onClick={onClick}
-      className={`${baseStyles} ${variantStyles} ${width ? width : "w-half"} ${className}`}
-    >
-      {variant === "default" && <IoMdPersonAdd className="inline-block mr-2" size={22} />}
-      {text}
-    </button>
+    <>
+      {variant === "edit" ? (
+        <button
+          onClick={onClick}
+          className="border-yellow-500 p-2 border text-base text-yellow-500 uppercase w-full rounded hover:shadow-md"
+        >
+          {text}
+        </button>
+      ) : variant === "delete" ? (
+        <button
+          onClick={onClick}
+          className="border-red-400 p-2 border text-base text-red-400 hover:bg-red-100 uppercase w-full rounded hover:shadow-md"
+        >
+          {text}
+        </button>
+      ) : (
+        <button
+          onClick={onClick}
+          className={`bg-customPurple p-4 rounded-lg text-base font-medium text-white tracking-widest hover:shadow-md ${
+            width ? width : "w-half"
+          } uppercase `}
+        >
+          <IoMdPersonAdd className="inline-block mr-2" size={22} />
+          {text}
+        </button>
+      )}
+    </>
   );
 };
 
