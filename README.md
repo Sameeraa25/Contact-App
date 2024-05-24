@@ -5,7 +5,7 @@ This React-based web application combines comprehensive contact management featu
 ## Features
 
 Contact Management:
--**Add Contacts:** Fill out a form to add new contacts.
+-**Add Contacts:** Fill out a form to add new contacts.</p>
 -**View Contacts:** See a list of all contacts.
 -**Contact Details:** View detailed information for each contact.
 -**Edit/Delete Contacts:** Modify or remove existing contacts.
@@ -19,7 +19,6 @@ Interactive Map: Utilizes React Leaflet to show country-specific COVID-19 statis
 -Node.js (version 16.x or higher)
 -npm or yarn
 
-##Installation
 To set up the project locally, follow these steps:
 
 1.**Clone the repository:**
